@@ -85,19 +85,19 @@
     </div>
     <div class="feature-grid">
       <a href="#" class="glass-card feature">
-        <div class="icon">⚡</div>
+        <div class="icon"><i data-feather="activity"></i></div>
         <div><h3>CRM</h3><p>Automatically capture data from email, calendar, and meetings to keep your pipeline current without manual updates.</p></div>
       </a>
       <a href="#" class="glass-card feature">
-        <div class="icon">👥</div>
+        <div class="icon"><i data-feather="users"></i></div>
         <div><h3>Relationship Intelligence</h3><p>See who on your team knows decision-makers at target companies and surface warm introductions to turn your network into dealflow.</p></div>
       </a>
       <a href="#" class="glass-card feature">
-        <div class="icon">✨</div>
+        <div class="icon"><i data-feather="sparkles"></i></div>
         <div><h3>AI &amp; Automation</h3><p>Enrich contact profiles automatically, surface relevant opportunities, and automate workflows to keep your team focused on deals.</p></div>
       </a>
       <a href="#" class="glass-card feature">
-        <div class="icon">📊</div>
+        <div class="icon"><i data-feather="bar-chart-2"></i></div>
         <div><h3>Analytics &amp; Reporting</h3><p>Monitor dealflow, measure team performance, and get real-time pipeline visibility for faster decisions.</p></div>
       </a>
     </div>
@@ -232,6 +232,10 @@
   </div>
 </footer>
 
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace()
+</script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
   document.getElementById('demoForm').addEventListener('submit', function(e){
