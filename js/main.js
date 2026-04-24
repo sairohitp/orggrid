@@ -1,4 +1,3 @@
-// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -12,7 +11,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar scroll effect
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
 
@@ -28,7 +26,6 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Intersection Observer for fade-in animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -43,7 +40,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for animation
 document.querySelectorAll('.value-card, .feature-row, .metric-card, .testimonial-card, .integration-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
@@ -51,7 +47,6 @@ document.querySelectorAll('.value-card, .feature-row, .metric-card, .testimonial
     observer.observe(el);
 });
 
-// Add stagger effect to grid items
 document.querySelectorAll('.value-grid .value-card').forEach((card, index) => {
     card.style.transitionDelay = `${index * 0.1}s`;
 });
@@ -64,7 +59,6 @@ document.querySelectorAll('.integration-grid .integration-card').forEach((card, 
     card.style.transitionDelay = `${index * 0.05}s`;
 });
 
-// Animate numbers when in view
 const animateNumber = (element, start, end, duration) => {
     const range = end - start;
     const increment = range / (duration / 16);
@@ -105,7 +99,6 @@ document.querySelectorAll('.stat-item').forEach(stat => {
     statsObserver.observe(stat);
 });
 
-// Mobile menu toggle (placeholder for future implementation)
 const createMobileMenu = () => {
     const navLinks = document.querySelector('.nav-links');
     const mobileMenuButton = document.createElement('button');
@@ -124,20 +117,13 @@ const createMobileMenu = () => {
     });
 };
 
-// Handle window resize
 let resizeTimer;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
-        // Responsive adjustments
     }, 250);
 });
 
-// Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    // Add loaded class to body for CSS transitions
     document.body.classList.add('loaded');
-    
-    // Log page load
-    console.log('Orggrid website loaded successfully');
 });
