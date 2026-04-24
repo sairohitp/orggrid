@@ -61,7 +61,7 @@ section { position: relative; }
 /* ============ COMMON ============ */
 .eyebrow {
   font-size: 0.72rem;
-  letter-spacing: 0.22em;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--muted-foreground);
 }
@@ -253,7 +253,7 @@ section { position: relative; }
   transition: opacity .2s;
   
   font-size: 1.25rem;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
   color: oklch(0.97 0.01 250 / 0.8);
 }
 .logo-item:hover { opacity: 1; }
@@ -266,7 +266,7 @@ section { position: relative; }
   border: 1px solid var(--border);
   padding: 0 1.25rem;
   font-size: 0.7rem;
-  letter-spacing: 0.18em;
+  letter-spacing: -0.02em;
   color: var(--muted-foreground);
   transition: color .2s, border-color .2s;
 }
@@ -274,7 +274,7 @@ section { position: relative; }
 .logo-pill .name {
   
   font-size: 1rem;
-  letter-spacing: 0;
+  letter-spacing: -0.02em;
   text-transform: none;
   color: oklch(0.97 0.01 250 / 0.85);
 }
@@ -408,7 +408,7 @@ section { position: relative; }
 .book .label {
   
   font-size: 0.625rem;
-  letter-spacing: 0.3em;
+  letter-spacing: -0.3em;
   color: oklch(0.62 0.21 258 / 0.9);
 }
 .book h3 {
@@ -449,7 +449,7 @@ section { position: relative; }
 .story .stat { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
 .story .stat .num {  font-size: 3.75rem; line-height: 1; font-weight: 400; }
 .story .stat .desc { margin-top: 0.5rem; font-size: 0.875rem; color: var(--muted-foreground); }
-.story .tag { margin-top: 2rem;  font-size: 0.625rem; letter-spacing: 0.25em; color: var(--muted-foreground); }
+.story .tag { margin-top: 2rem;  font-size: 0.625rem; letter-spacing: -0.02em; color: var(--muted-foreground); }
 .story .title { margin-top: 0.75rem;  font-size: 1.25rem; line-height: 1.3; }
 .story .read { margin-top: 2rem; font-size: 0.875rem; font-weight: 500; color: var(--brand); display: inline-flex; align-items: center; gap: 0.5rem; }
 
